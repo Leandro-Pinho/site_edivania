@@ -120,7 +120,8 @@
     <section id="contato" class="py-5 bg-light">
       <div class="container">
         <h2 class="text-center">Contato</h2>
-        <form action="https://formspree.io/f/mgveegzl" method="post">
+        <!-- <form action="https://formspree.io/f/mgveegzl" method="post"> -->
+        <form>
           <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
             <input
@@ -129,6 +130,7 @@
               id="nome"
               name="name"
               placeholder="Seu nome"
+              required
             />
           </div>
           <div class="mb-3">
@@ -139,6 +141,7 @@
               name="email"
               id="email"
               placeholder="Seu email"
+              required
             />
           </div>
           <div class="mb-3">
@@ -149,6 +152,7 @@
               name="message"
               rows="4"
               placeholder="Sua mensagem"
+              required
             ></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
