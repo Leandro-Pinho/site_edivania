@@ -35,29 +35,45 @@ async function getMessage() {
   const response = await fetch("https://api.adviceslip.com/advice");
   const result = await response.json();
   const message = result["slip"];
-  renderMessage(message);
+  // renderMessage(message);
+  getTradutor(message.advice);
   // console.log(message);
 }
+
 setInterval(getMessage, 3600000);
+
+async function getTradutor(message) {
+  const res = await fetch(
+    `https://api.mymemory.translated.net/get?q=${message}&langpair=en|pt-br`
+  );
+  const data = await res.json();
+  const result = await data["responseData"]["translatedText"];
+  // console.log(result)
+  renderMessage(result);
+}
+
+getTradutor();
 
 let texto = document.getElementById("card-text");
 let p = document.createElement("p");
 
 async function renderMessage(message) {
-  p.innerText = message.advice;
+  if (message == "indefinido") {
+    p.innerText = "carregando...";
+  } else {
+    p.innerText = message;
+  }
   texto.appendChild(p);
-  // console.log(message);
+  console.log(message);
 }
 
-/*
+// let buttonMessage = document.getElementById("button");
+// buttonMessage.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   getMessage();
+//   console.log("ola")
+// });
 
-let buttonMessage = document.getElementById("button");
-buttonMessage.addEventListener("click", (event) => {
-  event.preventDefault();
-  getMessage();
-  console.log("ola")
-});
-*/
 document.addEventListener("DOMContentLoaded", () => {
   getMessage();
 });
