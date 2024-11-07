@@ -1,4 +1,6 @@
 let dataHoje = document.getElementById("dataHoje");
+let frase = document.getElementById("frase");
+let cardfrase = document.getElementById("card-frase");
 
 const months = [
   "Janeiro",
@@ -29,6 +31,12 @@ let month = months[d.getMonth()];
 let day = weekends[d.getDay()];
 
 dataHoje.innerText = `${day}, ${d.getDate()} de ${month} de ${d.getFullYear()}`;
+
+if(day == "Quinta") {
+  frase.classList = "bg-primary rounded-bottom"
+  dataHoje.classList = "text-light"
+  cardfrase.classList = "card text-center border-primary"
+}
 
 // API
 async function getMessage() {
