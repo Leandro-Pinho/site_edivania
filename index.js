@@ -36,6 +36,10 @@ if(day == "Quinta") {
   frase.classList = "bg-primary rounded-bottom"
   dataHoje.classList = "text-light"
   cardfrase.classList = "card text-center border-primary"
+} else if (day == "Quarta") {
+  frase.className = "bg-danger rounded-bottom"
+  dataHoje.classList = "text-light"
+  cardfrase.classList = "card text-center border-danger"
 }
 
 // API
