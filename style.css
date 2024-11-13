@@ -11,5 +11,16 @@ body {
 }
 
 .bg-pink {
-  border-color: #d63384;
+  /* border-color: #d63384; */
+  text-align: center;
+  /* color: #d63384; */
+  border: 1px solid #d63384;
+  border-radius: 7px;
+  padding-top: 20px;
+}
+
+.bg-pinkBg {
+  border-radius: 0 0px 5px 5px;
+  background-color: #d63384;
+  padding: 5px;
 }

@@ -37,9 +37,11 @@ if(day == "Quinta") {
   dataHoje.classList = "text-light"
   cardfrase.classList = "card text-center border-primary"
 } else if (day == "Quarta") {
-  frase.className = "bg-danger rounded-bottom"
+  // frase.className = "bg-danger rounded-bottom"
   dataHoje.classList = "text-light"
-  cardfrase.classList = "card text-center border-danger"
+  // cardfrase.classList = "card text-center border-danger"
+  frase.setAttribute("class", 'bg-pinkBg')
+  cardfrase.setAttribute("class", 'bg-pink')
 }
 
 // API
