@@ -88,6 +88,65 @@ async function renderMessage(message) {
 //   console.log("ola")
 // });
 
+
+// contagem regressiva 
+const dia = document.getElementById('dia');
+const hora = document.getElementById('hora');
+const minuto = document.getElementById('minuto');
+const segundo = document.getElementById('segundo');
+
+function countDown() {
+  /* convertendo a variavel lancamento e uma data */
+  const dataLanc = new Date("05/01/2025");
+  /* pegando a data de hoje */
+  const hoje = new Date();
+  
+  /* transforma o resultado da data prevista menos a data de hoje em segundos */
+  const segTotal = (dataLanc - hoje) / 1000;
+
+
+  /* funções que transformam os segundos em (dias, horas, minutos e segundos) */
+  const finalDias = Math.floor(segTotal / 60 / 60 / 24);
+  const finalHoras = Math.floor(segTotal / 60 / 60) % 24;
+  const finalMinutos = Math.floor(segTotal / 60) % 60;
+  const finalSegundos = Math.floor(segTotal) % 60;
+
+  /* para aparecer a contagem no html */
+  dia.innerHTML = finalDias
+  hora.innerHTML = formatoTempo(finalHoras)
+  minuto.innerHTML = formatoTempo(finalMinutos)
+  segundo.innerHTML = formatoTempo(finalSegundos)
+}
+
+/* função para adicionar o "0" quando o numero for menor que 10 */
+function formatoTempo(tempo) {
+  return tempo < 10 ? `0${tempo}` : tempo;
+}
+
+/* chamando a função */
+
+
+/* fazendo a contagem sair no html */
+setInterval(countDown, 1000);
+
+
+// audio/ musica no site 
 document.addEventListener("DOMContentLoaded", () => {
   getMessage();
+
+  const audio = document.getElementById("musica");
+  const playButton = document.getElementById("playButton");
+  const pauseButton = document.getElementById("pauseButton");
+
+  audio.play();
+
+  playButton.addEventListener("click", () => {
+      audio.play();
+      // playButton.style.display = "none"; // Esconde o botão após clicar
+  });
+
+  pauseButton.addEventListener("click", () => {
+      audio.pause();
+      // playButton.style.display = "none"; // Esconde o botão após clicar
+  });
 });

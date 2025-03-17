@@ -1,204 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reason for Edivania</title>
-    <!-- Link do Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="container bg-light">
-    <!-- Menu de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">R.F.Edivania</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre"
-                >Sobre</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <header>
-      <div class="text-center bg-light">
-        <img src="./image/m_merged.png" class="img-fluid mx-auto" alt="" />
-        <!-- <h5 class="position-absolute img-header">I've a dream and I have a card :)</h5> -->
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reason for Edivania</title>
+  <!-- Link do Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Seção Sobre -->
-    <section id="sobre" class="py-5">
-      <div class="container">
-        <h2 class="text-center">Sobre</h2>
-        <p class="text-center">
-          Somos uma empresa familiar com objetivo de alegra e motivar o cliente,
-          trabalhando com muita dedicação, empenho, fidelidade e inovação, tudo
-          para trazer a maior satisfação ao cliente.
-        </p>
+<body class="container bg-light">
+  <!-- Menu de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">R.F.Edivania</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <section id="events" class="container text-center">
-      <div class="row justify-content-betwen">
-        <div class="col-sm-3 mb-3 mb-sm-0">
-          <div class="card" style="width: 18rem">
-            <img src="./image/cafe-latte.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Paladar refinado, e paixão por café... não pode faltar no seu
-                dia, pois é sua fonte de energia, pode ser acompanhado com leite
-                e também com um docinho 😉
-              </p>
-            </div>
+  <header>
+    <div class="text-center bg-light">
+      <img src="./src/image/m_merged.png" class="img-fluid mx-auto" alt="" />
+      <!-- <h5 class="position-absolute img-header">I've a dream and I have a card :)</h5> -->
+    </div>
+  </header>
+
+  <section class="anuncio">
+
+    <!-- contagem regressiva -->
+    <section class="count">
+      <div id="title">
+        <h2>Aniversário da cliente VIP em:</h2>
+        <img src="./src/image/icons/bolo.png"></img>
+      </div>
+
+      <div class="card-data">
+        <div class="card-dias">
+          <div>
+            <span id="dia">0</span>
           </div>
+          <div>dias</div>
         </div>
-        <div class="col-sm-3 mb-3 mb-sm-0">
-          <div class="card" style="width: 18rem">
-            <img src="./image/crossfit.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Determinada e focada, quando se é determinada não liga se faz
-                algo gostando ou odiando, sempre foca nos resultados,
-                resultados, resultados 😐
-              </p>
-            </div>
+        <small>:</small>
+        <div class="card-dias">
+          <div>
+            <span id="hora">0</span>
           </div>
+          <div>horas</div>
         </div>
-        <div class="col-sm-3 mb-3 mb-sm-0">
-          <div class="card" style="width: 18rem">
-            <img src="./image/viagem.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Seu espaço 😊, viajar é recarregar as baterias... por isso é
-                proibido falar e pensar em qualquer coisa relacionada a
-                trabalho, é só relaxar e curtiiir
-              </p>
-            </div>
+        <small>:</small>
+        <div class="card-dias">
+          <div>
+            <span id="minuto">0</span>
           </div>
+          <div>minutos</div>
         </div>
-        <div class="col-sm-3 mb-3 mb-sm-0">
-          <div class="card" style="width: 18rem">
-            <img src="./image/question.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Na vida sempre deixa um espaço para surpresas, não muito
-                radicais 😨, mas sempre gosta de quebrar rotinas e conhecer algo
-                novo, se surpreender 🤩kk
-              </p>
-            </div>
+        <small>:</small>
+        <div class="card-dias">
+          <div>
+            <span id="segundo">0</span>
           </div>
-        </div>
-        <div class="col-sm-3 mt-3 mb-sm-0">
-          <div class="card" style="width: 18rem">
-            <img src="./image/cao.jpeg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Seu pet de estimação se chamada "John snow" em homenagem ao personagem da serie GOT, mas na serie o John snow tem um cão/lobo com o nome "Ghost". (fica a dica) kkkkkk
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 mt-3 mb-sm-0">
-          <div class="card" style="width: 18rem">
-            <img src="./image/cidade.jpeg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Nasceu e cresceu numa cidade distante, tinha apenas 7000 habitantes, hoje deve ter 5000 mil, pois a familia dela é grande e foi embora e agora ela ainda esta trazendo os pais, vai ter menos ainda kkkkk
-              </p>
-            </div>
-          </div>
+          <div>segundos</div>
         </div>
       </div>
     </section>
 
-    <!-- seção message automatica  -->
-    <section class="container mt-5">
-      <div id="card-frase" class="card text-center">
-        <div class="card-body">
-          <h5 class="card-title">Frases do dia!</h5>
-          <p class="card-text" id="card-text"></p>
-          <!-- <a href="#" class="btn btn-primary"id="button" >Go somewhere</a> -->
+    <!-- musica de fundo  -->
+    <section class="music">
+      <audio id="musica" loop>
+        <source src="./src/music/Foo Fighters - Walk (Audio).MP3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+      <div>
+        <h3>Walk - foo fighters</h3>
+      </div>
+
+      <div id="button-p">
+        <div id="playButton">
+          <img src="./src/image/icons/play.png" alt="play">
         </div>
-        <div id="frase" class="card-footer text-muted">
-          <span id="dataHoje"></span>
+
+        <div id="pauseButton">
+          <img src="./src/image/icons/pause.png" alt="pause">
         </div>
       </div>
     </section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center">Contato</h2>
-        <!-- <form action="https://formspree.io/f/mgveegzl" method="post"> -->
-        <form>
-          <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input
-              type="text"
-              class="form-control"
-              id="nome"
-              name="name"
-              placeholder="Seu nome"
-              required
-            />
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Sobre</h2>
+      <p class="text-center">
+        Somos uma empresa familiar com objetivo de alegra e motivar o cliente,
+        trabalhando com muita dedicação, empenho, fidelidade e inovação, tudo
+        para trazer a maior satisfação ao cliente.
+      </p>
+    </div>
+  </section>
+
+  <section id="events" class="container text-center">
+    <div class="row justify-content-betwen">
+      <div class="col-sm-3 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem">
+          <img src="./src/image/cafe-latte.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Paladar refinado, e paixão por café... não pode faltar no seu
+              dia, pois é sua fonte de energia, pode ser acompanhado com leite
+              e também com um docinho 😉
+            </p>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              id="email"
-              placeholder="Seu email"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea
-              class="form-control"
-              id="mensagem"
-              name="message"
-              rows="4"
-              placeholder="Sua mensagem"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        </div>
       </div>
-    </section>
-    <footer class="text-center mt-5">
-      <p>Criada em 2024 – São Paulo – Reason For Edivania é uma empresa
-        para você 😉</p>
-    </footer>
+      <div class="col-sm-3 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem">
+          <img src="./src/image/crossfit.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Determinada e focada, quando se é determinada não liga se faz
+              algo gostando ou odiando, sempre foca nos resultados,
+              resultados, resultados 😐
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem">
+          <img src="./src/image/viagem.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Seu espaço 😊, viajar é recarregar as baterias... por isso é
+              proibido falar e pensar em qualquer coisa relacionada a
+              trabalho, é só relaxar e curtiiir
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem">
+          <img src="./src/image/question.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Na vida sempre deixa um espaço para surpresas, não muito
+              radicais 😨, mas sempre gosta de quebrar rotinas e conhecer algo
+              novo, se surpreender 🤩kk
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 mt-3 mb-sm-0">
+        <div class="card" style="width: 18rem">
+          <img src="./src/image/cao.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Seu pet de estimação se chamada "John snow" em homenagem ao
+              personagem da serie GOT, mas na serie o John snow tem um
+              cão/lobo com o nome "Ghost". (fica a dica) kkkkkk
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 mt-3 mb-sm-0">
+        <div class="card" style="width: 18rem">
+          <img src="./src/image/cidade.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Nasceu e cresceu numa cidade distante, tinha apenas 7000
+              habitantes, hoje deve ter 5000 mil, pois a familia dela é grande
+              e foi embora e agora ela ainda esta trazendo os pais, vai ter
+              menos ainda kkkkk
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Link do Bootstrap JS e dependências -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- seção message automatica  -->
+  <section class="container mt-5">
+    <div id="card-frase" class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Frases do dia!</h5>
+        <p class="card-text" id="card-text"></p>
+        <!-- <a href="#" class="btn btn-primary"id="button" >Go somewhere</a> -->
+      </div>
+      <div id="frase" class="card-footer text-muted">
+        <span id="dataHoje"></span>
+      </div>
+    </div>
+  </section>
 
-    <script src="index.js"></script>
-  </body>
+  <!-- Seção Contato -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Contato</h2>
+      <!-- <form action="https://formspree.io/f/mgveegzl" method="post"> -->
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="name" placeholder="Seu nome" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Seu email" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" name="message" rows="4" placeholder="Sua mensagem"
+            required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center mt-5">
+    <p>
+      Criada em 2024 – São Paulo – Reason For Edivania é uma empresa para você
+      😉
+    </p>
+  </footer>
+
+
+  <!-- Link do Bootstrap JS e dependências -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="index.js"></script>
+</body>
+
 </html>

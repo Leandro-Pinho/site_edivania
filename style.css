@@ -24,3 +24,70 @@ body {
   background-color: #d63384;
   padding: 5px;
 }
+
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 10px;
+  
+  border: 1px solid rgb(203, 202, 202);
+  border-radius: 5px;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 5px; */
+  padding: 5px;
+  gap: 10px;
+}
+
+#title h2 {
+  font-size: 20px;
+}
+
+#title img {
+  width: 32px;
+}
+
+.card-data {
+  display: flex;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+.card-dias span {
+  font-size: 26px;
+  background-color: rgb(217, 217, 215);
+  padding: 5px;
+  border-radius: 3px;
+  letter-spacing: 5px;
+}
+
+.anuncio  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.music {
+  border: 1px solid rgb(203, 202, 202);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#button-p{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#playButton img, #pauseButton img {
+  width: 48px;
+  border: none;
+  cursor: pointer;
+}
